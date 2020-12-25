@@ -1,0 +1,22 @@
+<div class="city-item-wrapper">
+    <div class="city-item-container">
+        <div class="name">
+            <p>{{city.name}}</p>
+        </div>
+        <div class="time">
+            <div class="mr-5">
+                <p >Sunrise</p>
+                <p class="title">{{getTimeFromDate(city.sys.sunrise)}}</p>
+            </div>
+            <div class="mr-5">
+                <p>Sunset</p>
+                <p class="title">{{getTimeFromDate(city.sys.sunset)}}</p>
+            </div>
+            <div>
+                <i *ngIf="city.id != id" (click)="getCityDetails()" class="fa fa-angle-right icon" aria-hidden="true"></i>
+                <i *ngIf="city.id == id" (click)="getCityDetails()" class="fa fa-angle-down icon" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+    <ng-content></ng-content>
+</div>

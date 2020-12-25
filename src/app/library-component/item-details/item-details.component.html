@@ -1,0 +1,15 @@
+<div class="item-wrapper">
+    <p class="title">Sea Level at 9:00</p>
+    <div>
+        <table>
+            <ng-container>
+                <tr>
+                    <th *ngFor="let item of seaLevelList;let i = index">Day {{i+1}}</th>
+                </tr>
+                <tr>
+                    <td *ngFor="let item of seaLevelList;let i = index">{{item.main.sea_level}}</td>
+                </tr>
+            </ng-container>
+        </table>
+    </div>
+</div>

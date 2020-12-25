@@ -1,0 +1,36 @@
+.city-item-wrapper{
+    box-shadow: 1px 1px 6px #CCC;
+    padding: 20px;
+    margin-bottom: 25px;
+
+    .city-item-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .name{
+            font-size: 18px;
+            font-weight: 700;
+            color: #2a333e;
+        }
+        .icon{
+            cursor: pointer;
+        }
+        .time{
+            display: flex;
+            align-items: center;
+            div{
+                display: flex;
+                flex-direction: column;
+            }
+            .title{
+                color: #bcc6d6;
+            }
+            .sunrise{
+    
+            }
+            .sunset{
+                
+            }
+        }
+    }
+}
